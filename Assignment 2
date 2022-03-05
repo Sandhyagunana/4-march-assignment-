@@ -1,0 +1,12 @@
+n=int(input())
+l=[]
+x=input().split()
+for i in x:
+    l.append(i)
+t=[]
+c=0
+for i in l:
+    if i not in t:
+        t.append(i)
+t.sort(reverse=True)
+print(t[2])
